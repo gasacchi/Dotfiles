@@ -637,3 +637,7 @@ alias mv = mv -v
 alias cp = cp -v
 alias ln = ln -v
 alias rm = rm -v
+
+
+# start starship
+use ~/.cache/starship/init.nu
