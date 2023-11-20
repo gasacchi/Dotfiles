@@ -1,4 +1,5 @@
 use theme.nu color
+
 # version = "0.87.0"
 
 # External completer example
@@ -630,3 +631,9 @@ alias ll = ls -l
 alias la = ls -a
 alias lla = ls -la
 alias e = hx
+
+
+alias mv = mv -v
+alias cp = cp -v
+alias ln = ln -v
+alias rm = rm -v
