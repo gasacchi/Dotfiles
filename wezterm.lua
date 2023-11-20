@@ -8,5 +8,8 @@ end
 
 
 config.color_scheme = 'GitHub Dark'
+config.font = wezterm.font "JetBrainsMono Nerd Font"
+config.font_size = 9
+
 
 return config
