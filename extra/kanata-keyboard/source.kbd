@@ -1,0 +1,7 @@
+;; source base on generic 60% keyboard
+(defsrc
+       w    e    r        i    o    p
+  a    s    d    f        k    l    ;    '
+    
+                 spc      ralt
+)

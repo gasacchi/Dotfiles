@@ -1,0 +1,180 @@
+;; Alpha Layer
+
+
+;; Alpha 1 Layer                         
+(defalias
+  ;; left side
+  u (tap-hold    100     200    u    lctrl)
+  o (tap-hold    100     200    o    lalt)
+  y (tap-hold    100     200    y    lmet)
+  
+  i (tap-hold    100     200    i    (layer-while-held number))
+  e (tap-hold    100     200    e    (layer-while-held symbol-2))
+  a (tap-hold    100     200    a    (layer-while-held symbol-1))
+  h (tap-hold    100     200    h    (layer-while-held system))
+  
+  ;; right side
+  c (tap-hold    100     200    c    lmet)
+  d (tap-hold    100     200    d    lalt)
+  l (tap-hold    100     200    l    lctrl)
+  
+  s (tap-hold    100     200    s    (layer-while-held system))
+  t (tap-hold    100     200    t    (layer-while-held symbol-1))
+  r (tap-hold    100     200    r    (layer-while-held symbol-2))
+  n (tap-hold    100     200    n    (layer-while-held number))
+  
+  
+  ;; bottom
+  lmod           spc
+ 
+  rmod           (layer-switch alpha-2)
+)
+          
+          
+(deflayer alpha-1
+        @u    @o    @y        @c    @d    @l
+  @i    @e    @a    @h        @s    @t    @r    @n
+    
+                    @lmod     @rmod
+)
+
+
+;; Alpha 2 Layer
+(defalias
+  ;; left side
+  , (tap-hold       100 200
+      (multi        (macro ,)                 (layer-switch alpha-1))
+      lctrl)
+
+  . (tap-hold       100 200 
+      (tap-dance    200 
+                    ((multi .                 (layer-switch alpha-1))
+                     (multi (macro . .)       (layer-switch alpha-1))
+                     (multi (macro . . .)     (layer-switch alpha-1))))
+       lalt)
+
+  f (tap-hold       100 200 
+      (tap-dance    200 
+                    ((multi f                 (layer-switch alpha-1))
+                     (multi (macro f f)       (layer-switch alpha-1))))
+       lmet)
+
+  q (tap-dance      200 
+                    ((multi q                 (layer-switch alpha-1))
+                     (multi (macro q q)       (layer-switch alpha-1))))
+  z (tap-dance      200 
+                    ((multi z                 (layer-switch alpha-1))
+                     (multi (macro z z)       (layer-switch alpha-1))))
+  x (tap-dance      200 
+                    ((multi x                 (layer-switch alpha-1))
+                     (multi (macro x x)       (layer-switch alpha-1))))
+  p (tap-dance      200 
+                    ((multi p                 (layer-switch alpha-1))
+                     (multi (macro p p)       (layer-switch alpha-1))))
+
+				
+  ;; right side
+  w (tap-hold       100 200 
+      (tap-dance    200 
+                    ((multi w                 (layer-switch alpha-1))
+                     (multi (macro w w)       (layer-switch alpha-1))))
+       lmet)
+
+  k (tap-hold       100 200 
+      (tap-dance    200 
+                    ((multi k                 (layer-switch alpha-1))
+                     (multi (macro k k)       (layer-switch alpha-1))))
+       lalt)
+
+  j (tap-hold       100 200 
+      (tap-dance    200 
+                    ((multi j                 (layer-switch alpha-1))
+                     (multi (macro j j)       (layer-switch alpha-1))))
+       lctrl)
+       
+  g (tap-dance      200 
+                    ((multi g                 (layer-switch alpha-1))
+                     (multi (macro g g)       (layer-switch alpha-1))))
+  m (tap-dance      200 
+                    ((multi m                 (layer-switch alpha-1))
+                     (multi (macro m m)       (layer-switch alpha-1))))
+  v (tap-dance      200 
+                    ((multi v                 (layer-switch alpha-1))
+                     (multi (macro v v)       (layer-switch alpha-1))))
+  b (tap-dance      200 
+                    ((multi b                 (layer-switch alpha-1))
+                     (multi (macro b b)       (layer-switch alpha-1))))
+                     
+  lmod0             (layer-switch alpha-1-upper)
+  rmod0             (layer-switch alpha-2-upper)
+)
+
+(deflayer alpha-2
+        @,    @.    @f        @w    @k    @j
+  @q    @z    @x    @p        @g    @m    @v    @b
+    
+                    @lmod0    @rmod0
+)
+;; alpha 1 upper
+(defalias
+  ;; left side
+  U (multi S-u                 (layer-switch alpha-1))
+  O (multi S-o                 (layer-switch alpha-1))
+  Y (multi S-y                 (layer-switch alpha-1))
+  
+  I (multi S-i                 (layer-switch alpha-1))
+  E (multi S-e                 (layer-switch alpha-1))
+  A (multi S-a                 (layer-switch alpha-1))
+  H (multi S-h                 (layer-switch alpha-1))
+
+				
+  ;; right side
+  C (multi S-c                 (layer-switch alpha-1))
+
+
+  D (multi S-d                 (layer-switch alpha-1))
+  L (multi S-l                 (layer-switch alpha-1))
+  
+       
+  S (multi S-s                 (layer-switch alpha-1))
+  T (multi S-t                 (layer-switch alpha-1))
+  R (multi S-r                 (layer-switch alpha-1))
+  N (multi S-n                 (layer-switch alpha-1))
+)
+
+
+;; alpha 2 upper
+(defalias
+  ;; left side
+  F (multi S-f                 (layer-switch alpha-1))
+  
+  Q (multi S-q                 (layer-switch alpha-1))
+  Z (multi S-z                 (layer-switch alpha-1))
+  X (multi S-x                 (layer-switch alpha-1))
+  P (multi S-p                 (layer-switch alpha-1))
+				
+  ;; right side
+  W (multi S-w                 (layer-switch alpha-1))
+  K (multi S-k                 (layer-switch alpha-1))
+  J (multi S-j                 (layer-switch alpha-1))
+  
+  G (multi S-g                 (layer-switch alpha-1))
+  M (multi S-m                 (layer-switch alpha-1))
+  V (multi S-v                 (layer-switch alpha-1))
+  B (multi S-b                 (layer-switch alpha-1))                    
+)
+
+(deflayer alpha-1-upper
+           @U       @O         @Y             @C        @D        @L
+  @I       @E       @A         @H             @S        @T        @R       @N
+    
+                               _              _
+)
+
+
+(deflayer alpha-2-upper
+           @,       @.         @F             @W        @K        @J
+  @Q       @Z       @X         @P             @G        @M        @V       @B
+    
+                               _              _
+)

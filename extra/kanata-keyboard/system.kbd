@@ -1,0 +1,33 @@
+;; Syetem Layer
+
+(defalias
+  cp    (tap-dance 200 (C-c C-v))
+  tab   (tap-hold 100 200 tab lshft)
+  pgup  (tap-hold 100 200 pgup (layer-while-held mouse-action))
+)
+
+
+(deflayer system
+           lctrl    @tab       S-tab          @cp       up        bspc
+  home     end      @pgup      pgdn           lft       down      rght      ret
+    
+                               esc            C-bspc)
+                               
+(defalias
+  mwu (mwheel-up 50 120)
+  mwd (mwheel-down 50 120)
+
+  ms↑ (movemouse-accel-up 3 1000 1 5)
+  ms← (movemouse-accel-left 3 1000 1 5)
+  ms↓ (movemouse-accel-down 3 1000 1 5)
+  ms→ (movemouse-accel-right 3 1000 1 5)
+  
+  fst (movemouse-speed 200)
+  slw (movemouse-speed 50)
+)
+
+(deflayer mouse-action
+           XX       XX         XX             mltp     @ms↑       mrtp
+  XX       @fst     XX         XX             @ms←     @ms↓       @ms→      mmtp
+    
+                               @mwu           @mwd)
