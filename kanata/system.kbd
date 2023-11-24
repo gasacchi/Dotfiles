@@ -6,12 +6,12 @@
   pgup  (tap-hold 100 200 pgup (layer-while-held mouse-action))
 )
 
-
+;; todo: add ctrl bspc
 (deflayer system
            lctrl    @tab       S-tab          @cp       up        bspc
   home     end      @pgup      pgdn           lft       down      rght      ret
     
-                               esc            C-bspc)
+                               esc            lalt)
                                
 (defalias
   mwu (mwheel-up 50 120)

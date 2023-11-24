@@ -8,7 +8,17 @@
 ## helix
 - [] keymaps 
 
-## nushell
-- [] custom command
-- [] create more alias
-- [] command complitions
+## app
+- [] ripgrep
+- [] igrep (interactive ripgrep)
+- [] skim
+- [] broot
+- [] dust
+- [] bottom
+- [] bandwhich
+- [] navi (interactive shell command)
+- [] atuin (interactive history command)
+- [] mprocs (multiple command in parallel)
+- [] hyperfine
+- [] gitui
+- [] delta (git highlighte

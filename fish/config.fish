@@ -33,3 +33,5 @@ set -gx PATH "$HOME/.bun/bin:$PATH"
 
 
 starship init fish | source
+
+
