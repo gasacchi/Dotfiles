@@ -21,10 +21,6 @@ function module.apply_to_config(config)
   config.colors = colors
   config.window_background_image = bg
   config.window_background_opacity = 0.98
-  config.inactive_pane_hsb = {
-    saturation = 0.9,
-    brightness = 0.3,
-  }
 
   -- fonts
   config.font = wez.font "JetBrainsMono NF"

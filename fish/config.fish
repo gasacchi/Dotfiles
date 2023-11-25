@@ -1,10 +1,11 @@
 set fish_greeting
 
 # shortcut
-alias ls=exa
-alias ll="exa -l"
-alias la="exa -a"
-alias lla="exa -la"
+alias ls="eza --icons"
+alias ll="ls -l"
+alias la="ls -a"
+alias lla="ls -la"
+alias lt="ls -T"
 alias e=helix
 
 # use verbose
