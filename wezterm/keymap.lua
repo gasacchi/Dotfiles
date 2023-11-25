@@ -11,7 +11,6 @@ wez.on('update-right-status', function(window, _)
 end)
 
 
-
 local module = {}
 
 local leader = { key = "t", mods = "ALT" }
@@ -30,7 +29,7 @@ local keys = {
   { key = "j", mods = "LEADER", action = act.ActivatePaneDirection "Down" },
   { key = "z", mods = "LEADER", action = act.TogglePaneZoomState },
   { key = "d", mods = "LEADER", action = act.CloseCurrentPane { confirm = true } },
-  { key = "s", mods = "LEADER", action = act.PaneSelect {} },
+  -- { key = "s", mods = "LEADER", action = act.PaneSelect {} }, -- bug
   {
     key = "r",
     mods = "LEADER",
@@ -93,7 +92,7 @@ function module.apply_to_config(config)
   config.leader = leader
   config.keys = keys
   config.key_tables = key_tables
-  config.quick_select_alphabet = "strn"
+  config.quick_select_alphabet = "strncdlhaeiyougmvbwkjpxzqf"
 end
 
 return module

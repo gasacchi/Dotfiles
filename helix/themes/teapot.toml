@@ -1,0 +1,5 @@
+inherits = "hex_lavender"
+"ui.background" = {}
+
+comment = "#2a2d38"
+# hello 
