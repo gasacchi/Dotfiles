@@ -5,7 +5,7 @@ alias ls=exa
 alias ll="exa -l"
 alias la="exa -a"
 alias lla="exa -la"
-alias e=hx
+alias e=helix
 
 # use verbose
 alias rm="rm -v"

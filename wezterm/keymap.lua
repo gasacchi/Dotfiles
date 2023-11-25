@@ -24,12 +24,21 @@ local keys = {
       name = "pane",
     }
   },
-  { key = "h",   mods = "LEADER",       action = act.ActivatePaneDirection "Left" },
-  { key = "l",   mods = "LEADER",       action = act.ActivatePaneDirection "Right" },
-  { key = "k",   mods = "LEADER",       action = act.ActivatePaneDirection "Up" },
-  { key = "j",   mods = "LEADER",       action = act.ActivatePaneDirection "Down" },
-  { key = "z",   mods = "LEADER",       action = act.TogglePaneZoomState },
-  { key = "d",   mods = "LEADER",       action = act.CloseCurrentPane { confirm = true } },
+  { key = "h", mods = "LEADER", action = act.ActivatePaneDirection "Left" },
+  { key = "l", mods = "LEADER", action = act.ActivatePaneDirection "Right" },
+  { key = "k", mods = "LEADER", action = act.ActivatePaneDirection "Up" },
+  { key = "j", mods = "LEADER", action = act.ActivatePaneDirection "Down" },
+  { key = "z", mods = "LEADER", action = act.TogglePaneZoomState },
+  { key = "d", mods = "LEADER", action = act.CloseCurrentPane { confirm = true } },
+  { key = "s", mods = "LEADER", action = act.PaneSelect {} },
+  {
+    key = "r",
+    mods = "LEADER",
+    action = act.ActivateKeyTable {
+      name = "pane_resize",
+      one_shot = false
+    }
+  },
 
 
   -- tabs
@@ -37,6 +46,7 @@ local keys = {
   { key = "Tab", mods = "CTRL",         action = act.ActivateTabRelative(1) },
   { key = "Tab", mods = "CTRL|SHIFT",   action = act.ActivateTabRelative(-1) },
   { key = "d",   mods = "LEADER|SHIFT", action = act.CloseCurrentTab { confirm = true } },
+  { key = "c",   mods = "LEADER",       action = act.ShowTabNavigator },
 
 
 
@@ -61,15 +71,7 @@ local key_tables = {
     { key = "n", action = act.SplitHorizontal { domain = 'CurrentPaneDomain' } },
     { key = "v", action = act.SplitHorizontal { domain = 'CurrentPaneDomain' } },
     { key = "s", action = act.SplitVertical { domain = 'CurrentPaneDomain' } },
-    { key = "p", action = act.PaneSelect {} },
     { key = "t", action = act.PaneSelect { mode = "SwapWithActive" } },
-    {
-      key = "r",
-      action = act.ActivateKeyTable {
-        name = "pane_resize",
-        one_shot = false
-      }
-    },
   },
   pane_resize = {
     { key = "h", action = act.AdjustPaneSize { "Left", 1 } },
@@ -82,7 +84,6 @@ local key_tables = {
     }
   },
   tab = {
-    -- { key = "t", action = act.ShowTabNavigator },
   }
 }
 
