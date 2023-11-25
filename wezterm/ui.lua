@@ -20,7 +20,7 @@ function module.apply_to_config(config)
   -- theme
   config.colors = colors
   config.window_background_image = bg
-  config.window_background_opacity = 0.98
+  -- config.window_background_opacity = 0.98
 
   -- fonts
   config.font = wez.font "JetBrainsMono NF"
