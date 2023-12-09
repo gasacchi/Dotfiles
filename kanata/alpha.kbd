@@ -32,10 +32,10 @@
           
           
 (deflayer alpha-1
-        @u    @o    @y        @c    @d    @l
-  @i    @e    @a    @h        @s    @t    @r    @n
+        @u    @o    @y                 @c    @d    @l
+  @i    @e    @a    @h                 @s    @t    @r    @n
     
-                    @lmod     @rmod
+                    @lmod              @rmod
 )
 
 
@@ -110,10 +110,10 @@
 )
 
 (deflayer alpha-2
-        @,    @.    @f        @w    @k    @j
-  @q    @z    @x    @p        @g    @m    @v    @b
+        @,    @.    @f                  @w    @k    @j
+  @q    @z    @x    @p                  @g    @m    @v    @b
     
-                    @lmod0    @rmod0
+                  @lmod0                @rmod0
 )
 ;; alpha 1 upper
 (defalias
@@ -168,7 +168,7 @@
            @U       @O         @Y             @C        @D        @L
   @I       @E       @A         @H             @S        @T        @R       @N
     
-                               _              _
+                               XX             XX
 )
 
 
@@ -176,5 +176,5 @@
            @,       @.         @F             @W        @K        @J
   @Q       @Z       @X         @P             @G        @M        @V       @B
     
-                               _              _
+                               XX             XX
 )

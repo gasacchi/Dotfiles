@@ -87,8 +87,6 @@ skip-levels                 = 0
 # ----------------------------------------------------------------------------
 
 # Keymaps --------------------------------------------------------------
-[keys.insert]
-l = { c = "normal_mode" }
 
 [keys.normal.space]
 "." = "file_picker_in_current_directory" 

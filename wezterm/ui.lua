@@ -24,7 +24,7 @@ function module.apply_to_config(config)
 
   -- fonts
   config.font = wez.font "JetBrainsMono NF"
-  config.font_size = 9
+  config.font_size = 10
 
   -- tab bar
   config.use_fancy_tab_bar = false
@@ -32,6 +32,9 @@ function module.apply_to_config(config)
 
   -- config.window_background_opacity = 0.9
   config.front_end = "WebGpu"
+
+  -- ignore missing glyphs
+  config.warn_about_missing_glyphs = false
 end
 
 return module

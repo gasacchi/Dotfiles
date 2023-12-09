@@ -16,6 +16,8 @@ alias ln="ln -v"
 
 alias cat=bat
 
+set -gx HELIX_RUNTIME "$HOME/.local/helix/runtime"
+
 # pnpm end Env
 set -gx EDITOR "hx"
 

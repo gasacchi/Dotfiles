@@ -1,12 +1,24 @@
+use-grammars = { only = [
+  "rust",
+  "javascript",
+  "typescript",
+  "rescript",
+  "json",
+  "toml",
+  "just",
+  "odin",
+  "scheme",
+] }
+
 [[language]]
 name = "odin"
 auto-format = false
 scope = "source.odin"
-file-types = ["odin", "emi"]
+file-types = ["odin", "tea"]
 roots = ["ols.json"]
-language-servers = [ "ols" ]
+language-servers = ["ols"]
 comment-token = "//"
-indent = { tab-width = 4, unit = "\t" }
+indent = { tab-width = 2, unit = "  " }
 
 [[grammar]]
 name = "odin"

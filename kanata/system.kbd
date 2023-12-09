@@ -1,4 +1,4 @@
-;; Syetem Layer
+;; System Layer
 
 (defalias
   cp    (tap-dance 200 (C-c C-v))
@@ -11,7 +11,7 @@
            lctrl    @tab       S-tab          @cp       up        bspc
   home     end      @pgup      pgdn           lft       down      rght      ret
     
-                               esc            lalt)
+                               esc            C-bspc)
                                
 (defalias
   mwu (mwheel-up 50 120)

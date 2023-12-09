@@ -13,7 +13,7 @@ end)
 
 local module = {}
 
-local leader = { key = "t", mods = "ALT" }
+local leader = { key = "t", mods = "ALT", timeout_milliseconds = 2000 }
 
 local keys = {
   {
@@ -47,9 +47,22 @@ local keys = {
   { key = "d",   mods = "LEADER|SHIFT", action = act.CloseCurrentTab { confirm = true } },
   { key = "c",   mods = "LEADER",       action = act.ShowTabNavigator },
 
+  -- window
+  {
+    key = "w",
+    mods = "LEADER",
+    action = act.ActivateKeyTable {
+      name = "window"
+    }
+  },
 
 
-  { key = "x",   mods = "LEADER",       action = act.ActivateCommandPalette },
+  { key = "c", mods = "LEADER", action = act.ShowTabNavigator },
+
+
+
+
+
 
 
 
@@ -82,8 +95,10 @@ local key_tables = {
       action = "PopKeyTable"
     }
   },
-  tab = {
-  }
+  window = {
+    { key = "l", action = act.ActivateWindowRelative(1)},
+    { key = "h", action = act.ActivateWindowRelative(-1) },
+  },
 }
 
 
