@@ -18,11 +18,12 @@ alias cat=bat
 
 set -gx HELIX_RUNTIME "$HOME/.local/helix/runtime"
 
-# pnpm end Env
-set -gx EDITOR "hx"
+set -gx EDITOR "helix"
 
 # local bin
 set -gx PATH "$HOME/.local/bin:$PATH"
+
+
 
 # rust path
 set -gx PATH "$HOME/.cargo/bin:$PATH"

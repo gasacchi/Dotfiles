@@ -1,17 +1,18 @@
 ;; System Layer
 
 (defalias
-  cp    (tap-dance 200 (C-c C-v))
   tab   (tap-hold 100 200 tab lshft)
-  pgup  (tap-hold 100 200 pgup (layer-while-held mouse-action))
+  mouse (layer-while-held mouse-action)
+  home  (tap-dance 200 (home pgup))
+  end   (tap-dance 200 (end  pgdn))
 )
 
 ;; todo: add ctrl bspc
 (deflayer system
-           lctrl    @tab       S-tab          @cp       up        bspc
-  home     end      @pgup      pgdn           lft       down      rght      ret
+           lctrl    @tab       S-tab          C-bspc    up        bspc
+  @home    @end     @mouse     esc            lft       down      rght      ret
     
-                               esc            C-bspc)
+                               caps           rpt-any)
                                
 (defalias
   mwu (mwheel-up 50 120)

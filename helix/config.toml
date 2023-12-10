@@ -90,6 +90,7 @@ skip-levels                 = 0
 
 [keys.normal.space]
 "." = "file_picker_in_current_directory" 
+g = "no_op"
 
 
 # ----------------------------------------------------------------------------

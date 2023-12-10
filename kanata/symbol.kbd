@@ -2,40 +2,40 @@
 
 ;; use macro for fix tap-hold bug behavior
 (defalias
-  pct (macro S-5)
-  hsh (macro S-3)
-  dlr (macro S-4)
-  exc (macro S-1)
-  tld (macro S-`)
-  dqt (macro S-')
-  at (macro S-2)
-  bar (macro S-\)
-  and (macro S-7)
+  pct  (macro S-5)
+  hsh  (macro S-3)
+  dlr  (macro S-4)
+  exc  (macro S-1)
+  tld  (macro S-`)
+  dqt  (macro S-')
+  at   (macro S-2)
+  bar  (macro S-\)
+  and  (macro S-7)
   
   
-  < (macro S-,)
-  > (macro S-.)
-  } (macro S-])
-  { (macro S-[)
-  qst (macro S-/)
-  crt (macro S-6)
-  cln (macro S-;)
-  rpn (macro S-0)
-  lpn (macro S-9)
-  und (macro S--)
+  <    (macro S-,)
+  >    (macro S-.)
+  }    (macro S-])
+  {    (macro S-[)
+  qst  (macro S-/)
+  crt  (macro S-6)
+  cln  (macro S-;)
+  rpn  (macro S-0)
+  lpn  (macro S-9)
   
+  astk (macro S-8)
+  pls  (macro S-=)
 )
 
-                       
 (deflayer symbol-1
-         @astk  @pct   @pls       @hsh    @dlr    @exc
-  `      @tld   @dqt   '          @bar    @at     /      \
+         -      @<     @>         @}      @{      @exc
+  `      @cln   [      ]          @rpn    @lpn    @und    @and
     
-                       =          @and)
+                       =          ;)
                        
 (deflayer symbol-2
-         -      @<     @>         @}      @{      @qst
-  @crt   @cln   [      ]          @rpn    @lpn    @und    ;
+         @pct   @astk  @pls       @hsh    @dlr    @qst
+  @crt   @tld   @dqt   '          @bar    @at     /       \
     
-                       =          @and)
+                       =          ;)
                        
