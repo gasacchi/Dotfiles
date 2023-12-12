@@ -1,0 +1,58 @@
+#!/bin/fish
+
+set command $argv[1]
+set args $argv[2]
+
+function open-broot
+    z run -c -d down -- broot
+    z action move-focus up
+    z action resize increase down
+    z action resize increase down
+    z action resize increase down
+    z action resize increase down
+    z action resize increase down
+    z action resize increase down
+    z action move-focus down
+end
+
+function open-text
+    z action move-focus up
+    z action write-chars ":open $args"  
+    z action write 13
+    # z action move-focus down
+    # z action write 3
+end
+
+function change-dir
+    z action move-focus up
+    z action write-chars ":change-current-directory $args"
+    z action write 13
+    # z action move-focus down
+    # z action write 3
+end
+
+function main
+
+    switch $command
+
+        case broot
+            open-broot
+
+        case open-text
+            open-text
+
+        case change-dir
+            change-dir
+
+
+
+        case "*"
+           z delete-session teapot
+           z -s teapot
+           z run --name Teapot -- helix
+        
+    end
+
+end
+
+main
