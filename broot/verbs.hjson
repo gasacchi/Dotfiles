@@ -11,7 +11,7 @@ verbs: [
     {
         name: change-dir
         key: ctrl-o
-        external: "teapot change-dir {directory}"
+        external: "teapot broot change-dir {directory}"
         leave_broot: true
         apply_to: directory
     }
@@ -19,7 +19,7 @@ verbs: [
     {
         name: open-file-text
         key: enter
-        external: "teapot open-text {file}"
+        external: "teapot broot open-text {file}"
         leave_broot: true
         apply_to: text_file
     }
