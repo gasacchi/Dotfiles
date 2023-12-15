@@ -29,7 +29,7 @@ set -gx PATH "$HOME/.local/bin:$PATH"
 set -gx PATH "$HOME/.cargo/bin:$PATH"
 
 # ## bun
-# set -gx PATH "$HOME/.bun/bin:$PATH"
+set -gx PATH "$HOME/.bun/bin:$PATH"
 
 # if status is-interactive
 #     # Commands to run in interactive sessions can go here

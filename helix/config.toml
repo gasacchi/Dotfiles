@@ -89,22 +89,15 @@ skip-levels                 = 0
 # Keymaps --------------------------------------------------------------
 
 [keys.normal.space]
- "." = "file_picker_in_current_directory" 
-g = "no_op"
+"." = "file_picker_in_current_directory" 
 F = "no_op"
-# c = ":sh teapot broot"
 
-# file
-# [keys.normal.space.f]
-# s = ":write"
-# S = ":write-quit"
+
+
+
 
 [keys.normal.space.t]
-e = ":sh wezterm cli split-pane --left --percent 25 -- broot"
 r = ":config-reload"
-t = ":sh wezterm cli send-text --pane-id (wezterm cli get-pane-direction right) --no-paste t"
-a = ":sh wezterm cli send-text --pane-id (wezterm cli get-pane-direction right) --no-paste a"
-c = ":sh wezterm cli send-text --pane-id (wezterm cli get-pane-direction right) --no-paste c"
 
 
 # ----------------------------------------------------------------------------

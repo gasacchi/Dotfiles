@@ -1,24 +1,9 @@
-# Teapot todo list
-
-## wezterm
-- [] config.background, use parallax effect
-- [] config.tab_bar_style 
-- [] keymaps
-
-## helix
-- [] keymaps 
-
-## app
-- [] ripgrep
-- [] igrep (interactive ripgrep)
-- [] skim
-- [] broot
-- [] dust
-- [] bottom
-- [] bandwhich
-- [] navi (interactive shell command)
-- [] atuin (interactive history command)
-- [] mprocs (multiple command in parallel)
-- [] hyperfine
+# wip ide like
 - [] gitui
-- [] delta (git highlighte
+- [] bacon
+- [] skim / rg
+- [] pane keymap
+- [] terminal
+
+# etc
+- [] sorting aur package

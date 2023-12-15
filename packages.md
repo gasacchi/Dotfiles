@@ -13,4 +13,11 @@
 - skim
 - mprocs-bin
 - broot
+
 - hyperfine
+
+
+# teapot packages
+- broot
+- gitui
+
