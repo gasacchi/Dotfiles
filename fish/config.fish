@@ -17,12 +17,11 @@ alias z=zellij
 
 alias cat=bat
 
-set -gx HELIX_RUNTIME "$HOME/.local/helix/runtime"
+# set -gx HELIX_RUNTIME "$HOME/.config/helix/runtime"
 set -gx EDITOR "helix"
 
 # local bin
 set -gx PATH "$HOME/.local/bin:$PATH"
-
 
 
 # rust path

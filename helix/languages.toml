@@ -2,12 +2,12 @@ use-grammars = { only = [
   "rust",
   "javascript",
   "typescript",
-  "rescript",
   "json",
   "toml",
   "just",
   "odin",
   "scheme",
+  "ocaml",
 ] }
 
 [[language]]
