@@ -1,5 +1,9 @@
 set fish_greeting
 
+# fast access
+alias teapot="cd ~/Dev/teapot"
+alias dotfiles="cd ~/Dev/dotfiles"
+
 # shortcut
 alias ls="eza --icons"
 alias ll="ls -l"

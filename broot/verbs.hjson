@@ -19,7 +19,11 @@ verbs: [
     {
         name: open-file-text
         key: enter
-        external: ["fish", "-c", "zellij action move-focus right;zellij action write-chars ':open {file}';zellij action write 13"]
+        external: [
+            "fish",
+            "-c",
+            "zellij action move-focus right;zellij action write-chars ':open {file}';zellij action write 13;zellij action move-focus left;zellij action write 27;zellij action move-focus right"
+        ]
         leave_broot: false
         apply_to: text_file
     }
