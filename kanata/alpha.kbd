@@ -109,6 +109,7 @@
   rmod0             (layer-switch alpha-2-upper)
 )
 
+
 (deflayer alpha-2
         @,    @.    @f                  @w    @k    @j
   @q    @z    @x    @p                  @g    @m    @v    @b
@@ -118,50 +119,50 @@
 ;; alpha 1 upper
 (defalias
   ;; left side
-  U (multi S-u                 (layer-switch alpha-1))
-  O (multi S-o                 (layer-switch alpha-1))
-  Y (multi S-y                 (layer-switch alpha-1))
+  U (multi (macro S-u)                 (layer-switch alpha-1))
+  O (multi (macro S-o)                 (layer-switch alpha-1))
+  Y (multi (macro S-y)                 (layer-switch alpha-1))
   
-  I (multi S-i                 (layer-switch alpha-1))
-  E (multi S-e                 (layer-switch alpha-1))
-  A (multi S-a                 (layer-switch alpha-1))
-  H (multi S-h                 (layer-switch alpha-1))
+  I (multi (macro S-i)                 (layer-switch alpha-1))
+  E (multi (macro S-e)                 (layer-switch alpha-1))
+  A (multi (macro S-a)                 (layer-switch alpha-1))
+  H (multi (macro S-h)                 (layer-switch alpha-1))
 
 				
   ;; right side
-  C (multi S-c                 (layer-switch alpha-1))
+  C (multi (macro S-c)                 (layer-switch alpha-1))
 
 
-  D (multi S-d                 (layer-switch alpha-1))
-  L (multi S-l                 (layer-switch alpha-1))
+  D (multi (macro S-d)                 (layer-switch alpha-1))
+  L (multi (macro S-l)                 (layer-switch alpha-1))
   
        
-  S (multi S-s                 (layer-switch alpha-1))
-  T (multi S-t                 (layer-switch alpha-1))
-  R (multi S-r                 (layer-switch alpha-1))
-  N (multi S-n                 (layer-switch alpha-1))
+  S (multi (macro S-s)                 (layer-switch alpha-1))
+  T (multi (macro S-t)                 (layer-switch alpha-1))
+  R (multi (macro S-r)                 (layer-switch alpha-1))
+  N (multi (macro S-n)                 (layer-switch alpha-1))
 )
 
 
 ;; alpha 2 upper
 (defalias
   ;; left side
-  F (multi S-f                 (layer-switch alpha-1))
+  F (multi (macro S-f)                 (layer-switch alpha-1))
   
-  Q (multi S-q                 (layer-switch alpha-1))
-  Z (multi S-z                 (layer-switch alpha-1))
-  X (multi S-x                 (layer-switch alpha-1))
-  P (multi S-p                 (layer-switch alpha-1))
+  Q (multi (macro S-q)                 (layer-switch alpha-1))
+  Z (multi (macro S-z)                 (layer-switch alpha-1))
+  X (multi (macro S-x)                 (layer-switch alpha-1))
+  P (multi (macro S-p)                 (layer-switch alpha-1))
 				
   ;; right side
-  W (multi S-w                 (layer-switch alpha-1))
-  K (multi S-k                 (layer-switch alpha-1))
-  J (multi S-j                 (layer-switch alpha-1))
+  W (multi (multi S-w)                 (layer-switch alpha-1))
+  K (multi (multi S-k)                 (layer-switch alpha-1))
+  J (multi (multi S-j)                 (layer-switch alpha-1))
   
-  G (multi S-g                 (layer-switch alpha-1))
-  M (multi S-m                 (layer-switch alpha-1))
-  V (multi S-v                 (layer-switch alpha-1))
-  B (multi S-b                 (layer-switch alpha-1))                    
+  G (multi (macro S-g)                 (layer-switch alpha-1))
+  M (multi (macro S-m)                 (layer-switch alpha-1))
+  V (multi (macro S-v)                 (layer-switch alpha-1))
+  B (multi (macro S-b)                 (layer-switch alpha-1))                    
 )
 
 (deflayer alpha-1-upper
