@@ -1,0 +1,4 @@
+inherits = "kanagawa"
+"ui.background" = {}
+
+# comment = "#2a2d38"

@@ -155,9 +155,9 @@
   P (multi (macro S-p)                 (layer-switch alpha-1))
 				
   ;; right side
-  W (multi (multi S-w)                 (layer-switch alpha-1))
-  K (multi (multi S-k)                 (layer-switch alpha-1))
-  J (multi (multi S-j)                 (layer-switch alpha-1))
+  W (multi (macro S-w)                 (layer-switch alpha-1))
+  K (multi (macro S-k)                 (layer-switch alpha-1))
+  J (multi (macro S-j)                 (layer-switch alpha-1))
   
   G (multi (macro S-g)                 (layer-switch alpha-1))
   M (multi (macro S-m)                 (layer-switch alpha-1))

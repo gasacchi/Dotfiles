@@ -29,13 +29,13 @@
 
 (deflayer symbol-1
          -      @<     @>         @}      @{      @exc
-  `      @cln   [      ]          @rpn    @lpn    @und    @and
+  @tld   @cln   [      ]          @rpn    @lpn    @und    @and
     
                        =          ;)
                        
 (deflayer symbol-2
          @pct   @astk  @pls       @hsh    @dlr    @qst
-  @crt   @tld   @dqt   '          @bar    @at     /       \
+  @crt   `      @dqt   '          @bar    @at     /       \
     
                        =          ;)
                        

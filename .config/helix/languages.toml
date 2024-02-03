@@ -1,0 +1,32 @@
+
+[[language]]
+name = "odin"
+auto-format = false
+scope = "source.odin"
+file-types = ["odin", "ge"]
+roots = ["ols.json"]
+language-servers = ["ols"]
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
+
+
+[[language]]
+name = "scheme"
+scope = "source.scheme"
+injection-regex = "scheme"
+file-types = ["ss", "scm", "kbd"]
+shebangs = ["scheme", "guile", "chicken"]
+comment-token = ";"
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "rescript"
+scope = "source.rescript"
+injection-regex = "rescript"
+file-types = ["res", "resi"]
+roots = ["bsconfig.json"]
+auto-format = true
+comment-token = "//"
+language-servers = [ "rescript-language-server" ]
+indent = { tab-width = 2, unit = "  " }
+

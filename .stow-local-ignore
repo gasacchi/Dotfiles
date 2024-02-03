@@ -1,0 +1,9 @@
+.git
+.gitignore
+assets
+kanata
+LICENSE
+README.md
+packages.md
+justfile
+udev

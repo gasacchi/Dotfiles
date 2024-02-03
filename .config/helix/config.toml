@@ -4,7 +4,7 @@
 
 
 # theme ----------------------------------------------------------------------
-theme = "gruvbox_dark_hard_transparent"
+theme = "kanagawa_transparent"
 # ----------------------------------------------------------------------------
 
 
@@ -56,7 +56,7 @@ mode.select                 = "󱖲 Select"
 # LSP -------------------------------------------------------------------------
 [editor.lsp]
 display-messages            = true
-display-inlay-hints         = true
+display-inlay-hints         = false
 # ----------------------------------------------------------------------------
 
 
@@ -68,11 +68,11 @@ display-inlay-hints         = true
 # -----------------------------------------------------------------------------
 
 # Whitespace Render -----------------------------------------------------------
-# [editor.whitespace]
+[editor.whitespace]
 # render                      = "all"
 
 [editor.whitespace.characters]
-# space                       = "·"
+space                       = "·"
 nbsp                        = "⍽"
 tab                         = "→"
 newline                     = "⏎"
@@ -87,14 +87,13 @@ skip-levels                 = 0
 # ----------------------------------------------------------------------------
 
 # Keymaps --------------------------------------------------------------
+[keys.normal]
+C-c = "no_op"
 
 [keys.normal.space]
 "." = "file_picker_in_current_directory" 
+c = "toggle_comments"
 F = "no_op"
-
-
-
-
 
 [keys.normal.space.t]
 r = ":config-reload"
