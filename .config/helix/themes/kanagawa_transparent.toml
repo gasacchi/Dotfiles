@@ -1,4 +1,3 @@
 inherits = "kanagawa"
+"ui.menu" = { fg = "fujiWhite", bg = "sumiInk0" }
 "ui.background" = {}
-
-# comment = "#2a2d38"
