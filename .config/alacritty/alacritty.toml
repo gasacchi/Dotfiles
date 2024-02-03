@@ -15,7 +15,7 @@ normal = { family = "JetBrainsMono Nerd Font Propo", style = "Regular"} #Thin
 bold = { family = "JetBrainsMono Nerd Font Propo", style = "Bold"}
 italic = { family = "JetBrainsMono Nerd Font Propo", style = "Italic"}
 bold_italic = { family = "JetBrainsMono Nerd Font Propo", style = "Bold Italic"}
-size = 10
+size = 11
 
 
 # Colors (Kanagawa Wave)
