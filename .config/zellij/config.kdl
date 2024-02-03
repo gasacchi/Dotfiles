@@ -200,4 +200,20 @@ ui {
     }
 }
 
-theme "gruvbox-dark"
+theme "default"
+    
+themes {
+    default {
+        fg "#DCD7BA"
+        bg "#1F1F28"
+        red "#C34043"
+        green "#76946A"
+        yellow "#C0A36E"
+        blue "#7E9CD8"
+        magenta "#957FB8"
+        orange "#FFA066"
+        cyan "#9A9589"
+        black "#090618"
+        white "#c84093"
+    }
+}

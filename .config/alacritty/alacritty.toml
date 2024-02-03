@@ -3,6 +3,7 @@ live_config_reload = true
 
 [window]
 padding = { x = 8, y = 8 }
+decorations = "none"
 opacity = 0.8
 blur = true
 startup_mode = "Maximized"
@@ -56,3 +57,11 @@ color = '#ffa066'
 [[colors.indexed_colors]]
 index = 17
 color = '#ff5d62'
+
+[bell]
+animation = "EaseOut"
+duration = 1
+color = "#E46876"
+
+[cursor]
+style = { shape = "Block", blinking = "On"}
