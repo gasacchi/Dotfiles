@@ -2,7 +2,7 @@ set fish_greeting
 
 # fast access
 alias gl="cd ~/Dev/Glimpse"
-alias dotfiles="cd ~/Dev/dotfiles"
+alias dotfiles="cd ~/Dotfiles"
 
 # shortcut
 alias ls="eza --icons"

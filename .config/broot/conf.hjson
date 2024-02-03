@@ -90,7 +90,7 @@ show_selection_mark: true
 # (see https://dystroy.org/broot/icons for installation and
 # troubleshooting)
 #
-# icon_theme: vscode
+icon_theme: vscode
 
 ###############################################################
 # Special paths
@@ -190,7 +190,8 @@ imports: [
             unknown
         ]
         # (un)comment to choose your preferred skin
-        file: skins/dark-blue.hjson
+        file: skins/kanagawa.hjson
+        // file: skins/dark-blue.hjson
         //file: skins/catppuccin-macchiato.hjson
         //file: skins/catppuccin-mocha.hjson
         //file: skins/dark-gruvbox.hjson
