@@ -10,7 +10,7 @@ alias ll="ls -l"
 alias la="ls -a"
 alias lla="ls -la"
 alias lt="ls -T"
-alias e=hx
+alias e=helix
 
 # git
 alias gadd="git add"
@@ -27,18 +27,20 @@ alias z=zellij
 alias cat=bat
 
 # set -gx HELIX_RUNTIME "$HOME/.config/helix/runtime"
-set -gx EDITOR "hx"
+set -gx EDITOR "helix"
 
-# local bin
+# local bin and scripts
 set -gx PATH "$HOME/.local/bin:$PATH"
+set -gx PATH "$HOME/.local/scripts:$PATH"
 
 
 # rust path
 set -gx PATH "$HOME/.cargo/bin:$PATH"
 
+# bun path
 set -gx PATH "$HOME/.bun/bin:$PATH"
 
-set -gx PATH "$HOME/.dotnet/tools:$PATH"
+
 
 # if status is-interactive
 #     # Commands to run in interactive sessions can go here

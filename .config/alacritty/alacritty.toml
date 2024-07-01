@@ -2,17 +2,15 @@ shell = "fish"
 live_config_reload = true
 
 [window]
-padding = { x = 8, y = 8 }
-decorations = "none"
+padding = { x = 2, y = 2 }
 opacity = 0.8
 blur = true
-startup_mode = "Maximized"
 
 [scrolling]
 history = 100_000
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font Propo", style = "Thin"}
+normal = { family = "JetBrainsMono Nerd Font Propo", style = "Light"}
 bold = { family = "JetBrainsMono Nerd Font Propo", style = "Bold"}
 italic = { family = "JetBrainsMono Nerd Font Propo", style = "Italic"}
 bold_italic = { family = "JetBrainsMono Nerd Font Propo", style = "Bold Italic"}

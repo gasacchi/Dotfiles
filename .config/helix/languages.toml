@@ -1,15 +1,3 @@
-
-[[language]]
-name = "odin"
-auto-format = false
-scope = "source.odin"
-file-types = ["odin", "ge"]
-roots = ["ols.json"]
-language-servers = ["ols"]
-comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
-
-
 [[language]]
 name = "scheme"
 scope = "source.scheme"
@@ -20,13 +8,21 @@ comment-token = ";"
 indent = { tab-width = 2, unit = "  " }
 
 [[language]]
-name = "rescript"
-scope = "source.rescript"
-injection-regex = "rescript"
-file-types = ["res", "resi"]
-roots = ["bsconfig.json"]
-auto-format = true
-comment-token = "//"
-language-servers = [ "rescript-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
 
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "tailwindcss-ls" ]

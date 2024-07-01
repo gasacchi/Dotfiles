@@ -1,0 +1,8 @@
+[Unit]
+Description=Kanata
+
+[Service]
+ExecStart=kanata -c home/gsc/.config/kanata/config.kbd
+
+[Install]
+WantedBy=multi-user.target
