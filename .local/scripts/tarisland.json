@@ -1,0 +1,20 @@
+{
+  "keyMapNodes": [
+    {
+      "comment": "wheel",
+      "type": "KMT_STEER_WHEEL",
+      "centerPos": {
+        "x": 0.16,
+        "y": 0.75
+      },
+      "leftOffset": 0.1,
+      "rightOffset": 0.1,
+      "upOffset": 0.27,
+      "downOffset": 0.2,
+      "leftKey": "Key_E",
+      "rightKey": "Key_H",
+      "upKey": "Key_O",
+      "downKey": "Key_A"
+    }
+  ]
+}

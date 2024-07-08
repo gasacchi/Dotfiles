@@ -259,11 +259,31 @@
   tab   (tap-hold 100 200 tab lshft)
   home  (tap-dance 200 (home pgup))
   end   (tap-dance 200 (end  pgdn))
+  game  (tap-dance 200 ((layer-switch game-mode) lrld))
 )
 
 ;; todo: add ctrl bspc
 (deflayer system
          lctrl @tab   S-tab         C-bspc up   bspc
   @home  @end  lalt   esc           lft    down rght  ret
-                      caps          rpt-any
+                      caps          @game
 )
+
+
+;; game mode layer
+(defalias
+ lgmod spc
+ rgmod (layer-switch main-alpha)
+)
+
+(deflayer game-mode
+         XX    w   XX             4   5   6
+   lshft a     s    d             1   2   3   7
+                   @lgmod         @rgmod
+)
+
+;; (deflayer game-left
+;;          xx    w   xx             q   e   r
+;;    lshft a     s    d             A-1 A-2 A-3   7
+;;                    @lgmod         @rgmod
+;; )

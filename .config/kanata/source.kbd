@@ -1,7 +1,0 @@
-;; source base on generic 60% keyboard
-(defsrc
-       '    ;    l               f    d    s
-  ]    [    p    o               r    e    w    q
-    
-                 f10             f6
-)
