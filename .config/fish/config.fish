@@ -1,8 +1,9 @@
 set fish_greeting
 
 # fast access
-alias gl="cd ~/Dev/Glimpse"
+alias tea="cd ~/Dev/teapot"
 alias dotfiles="cd ~/Dotfiles"
+alias code="zeditor"
 
 # shortcut
 alias ls="eza --icons"
@@ -22,12 +23,11 @@ alias rm="rm -v"
 alias mv="mv -v"
 alias cp="cp -v"
 alias ln="ln -v"
-alias z=zellij
 
 alias cat=bat
 
 # set -gx HELIX_RUNTIME "$HOME/.config/helix/runtime"
-set -gx EDITOR "helix"
+set -gx EDITOR helix
 
 # local bin and scripts
 set -gx PATH "$HOME/.local/bin:$PATH"
@@ -39,6 +39,9 @@ set -gx PATH "$HOME/.cargo/bin:$PATH"
 
 # bun path
 set -gx PATH "$HOME/.bun/bin:$PATH"
+
+# bun path
+set -gx PATH "$HOME/.zig:$PATH"
 
 
 
@@ -86,5 +89,3 @@ set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
 
 starship init fish | source
-
-

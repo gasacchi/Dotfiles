@@ -1,11 +1,15 @@
+# [[language]]
+# name = "scheme"
+# scope = "source.scheme"
+# injection-regex = "scheme"
+# file-types = ["ss", "scm", "kbd"]
+# shebangs = ["scheme", "guile", "chicken"]
+# comment-token = ";"
+# indent = { tab-width = 2, unit = "  " }
+
 [[language]]
-name = "scheme"
-scope = "source.scheme"
-injection-regex = "scheme"
-file-types = ["ss", "scm", "kbd"]
-shebangs = ["scheme", "guile", "chicken"]
-comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+name = "typescript"
+indent = { tab-width = 4, unit = "    "}
 
 [[language]]
 name = "html"
@@ -26,3 +30,4 @@ language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
 [[language]]
 name = "svelte"
 language-servers = [ "svelteserver", "tailwindcss-ls" ]
+
