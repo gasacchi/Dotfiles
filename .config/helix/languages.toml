@@ -8,8 +8,23 @@
 # indent = { tab-width = 2, unit = "  " }
 
 [[language]]
+name = "glimpse"
+scope = "source.glimpse"
+injection-regex = "glimpse"
+file-types = ["glimpse"]
+comment-token = "//"
+indent = { tab-width = 4, unit = "\t" }
+grammar = "typescript"
+
+
+[[language]]
 name = "typescript"
 indent = { tab-width = 4, unit = "    "}
+
+[[language]]
+name = "c"
+language-servers = []
+indent = { tab-width = 4, unit = "\t" }
 
 [[language]]
 name = "html"

@@ -15,7 +15,6 @@
   "tabs": {
     "git_status": true
   },
-  "format_on_save": "on",
   "wrap_guides": [80],
   "relative_line_numbers": true,
   "telemetry": {
@@ -31,5 +30,10 @@
     "light": "One Light",
     "dark": "Catppuccin Mocha"
   },
-  "vim_mode": true
+  "vim_mode": true,
+  "languages": {
+    "C": {
+      "hard_tabs": true
+    }
+  }
 }

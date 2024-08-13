@@ -3,7 +3,6 @@ set fish_greeting
 # fast access
 alias tea="cd ~/Dev/teapot"
 alias dotfiles="cd ~/Dotfiles"
-alias code="zeditor"
 
 # shortcut
 alias ls="eza --icons"

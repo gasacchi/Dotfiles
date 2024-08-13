@@ -1,5 +1,6 @@
 [
   {
+    /// autocomplete navigation
     "context": "Editor && (showing_code_actions || showing_completions)",
     "bindings": {
       "ctrl-j": "editor::ContextMenuNext",
