@@ -1,3 +1,0 @@
-inherits = "kanagawa"
-"ui.menu" = { fg = "fujiWhite", bg = "sumiInk0" }
-"ui.background" = {}
