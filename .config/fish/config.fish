@@ -39,7 +39,7 @@ set -gx PATH "$HOME/.cargo/bin:$PATH"
 # bun path
 set -gx PATH "$HOME/.bun/bin:$PATH"
 
-# bun path
+# zig path
 set -gx PATH "$HOME/.zig:$PATH"
 
 
