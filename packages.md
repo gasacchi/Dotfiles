@@ -12,3 +12,5 @@
 
 # language server
 - taplo (toml)
+- typescript, typescript-language-server
+- vscode-langservers-extracted

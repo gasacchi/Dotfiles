@@ -30,6 +30,6 @@ select = "underline"
 [keys.normal.space.e]
 r = ":config-reload"
 o = ":config-open"
-t = ":pipe-to wezterm cli split-pane --right --percent 35 -- fish"
+t = ":sh editor fish"
 # b = ":pipe-to wezterm cli spawn --cwd . -- nu -e ./build"
 l = ":o todo.md"
