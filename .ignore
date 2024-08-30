@@ -1,4 +1,6 @@
 !.config
+!.local
 !.ignore
 !.gitignore
+!.gitconfig
 !.stow-local-ignore

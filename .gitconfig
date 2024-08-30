@@ -1,0 +1,21 @@
+[include]
+	path = ~/.config/delta/themes/catppuccin.gitconfig
+
+[core]
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	features = catppuccin-gsc-mod
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+
+[user]
+	email = gasacchi404@gmail.com
+	name = gasacchi
