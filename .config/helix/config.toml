@@ -1,0 +1,35 @@
+theme = "gelix"
+
+[editor]
+scrolloff = 50
+line-number = "relative"
+# shell = []
+cursorline = true
+cursorcolumn = true
+auto-format = false
+completion-timeout = 5
+rulers = [ 80 ]
+bufferline = "always"
+color-modes = true
+popup-border = "none"
+jump-label-alphabet = "strnieahcdluoy"
+
+[editor.statusline]
+mode.normal = " normal"
+mode.insert = " insert"
+mode.select = "󰫙 select"
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[keys.normal.space.e]
+r = ":config-reload"
+o = ":config-open"
+t = ":pipe-to wezterm cli split-pane --right --percent 35 -- nu"
+b = ":pipe-to wezterm cli spawn --cwd . -- nu -e ./build"
+l = ":o todo.md"
