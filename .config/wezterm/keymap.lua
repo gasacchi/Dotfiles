@@ -39,7 +39,11 @@ module.keys = {
     mods = "CTRL|SHIFT",
     action = action.ActivateTabRelative(-1)
   },
-
+  {
+    key = "v",
+    mods = "CTRL",
+    action = action.PasteFrom "Clipboard"
+  }
 }
 
 

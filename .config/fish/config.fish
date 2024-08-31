@@ -3,12 +3,17 @@ alias ls="eza"
 alias ll="ls -l"
 alias la="ls -a"
 alias lla="ls -la"
-alias e="helix"
 alias cp="cp -v"
 alias mv="mv -v"
 alias rm="rm -v"
 alias cat="bat"
 alias dotfiles="cd ~/Dotfiles"
+
+if pgrep -f wezterm > /dev/null
+    alias e="editor"
+else
+    alias e="helix"
+end
 
 set -U fish_greeting
 set -Ux LS_COLORS $(vivid generate catppuccin-mocha)

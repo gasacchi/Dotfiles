@@ -1,3 +1,24 @@
 #!/usr/bin/fish
 
-wezterm
+if pgrep -f wezterm > /dev/null
+    set file_paths
+    for arg in $argv
+        if test -f $arg
+            set -a file_paths (realpath $arg)
+        else
+            echo "'$arg' is not valid file path"
+            exit 1
+        end
+    end
+
+    # send to helix
+    set pane_id (wezterm cli get-pane-direction left)
+
+    # echo ":open $file_paths"
+    wezterm cli send-text \x1B --no-paste --pane-id $pane_id
+    wezterm cli send-text ":open $file_paths" --no-paste --pane-id $pane_id
+    wezterm cli send-text \x0D --no-paste --pane-id $pane_id
+    wezterm cli activate-pane --pane-id $pane_id
+else
+    wezterm
+end

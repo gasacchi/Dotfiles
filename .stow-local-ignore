@@ -2,6 +2,7 @@
 .gitignore
 .ignore
 .stow-local-ignore
+todo.md
 justfile
 udev
 packages.md
