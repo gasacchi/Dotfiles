@@ -1,3 +1,20 @@
 [[language]]
 name = "typescript"
-indent = { tab-width = 4, unit = "\t\t"}
+indent = { tab-width = 4, unit = "\t"}
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls"]
+indent = { tab-width = 4, unit = "\t" }
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
+auto-format = true
+indent = { tab-width = 4, unit = "\t" }
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "tailwindcss-ls" ]
+indent = { tab-width = 4, unit = "\t" }
+

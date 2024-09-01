@@ -6,13 +6,12 @@ if pgrep -f wezterm > /dev/null
         if test -f $arg
             set -a file_paths (realpath $arg)
         else
-            echo "'$arg' is not valid file path"
-            exit 1
+            set -a file_paths (realpath $arg)
         end
     end
 
     # send to helix
-    set pane_id (wezterm cli get-pane-direction left)
+    set pane_id 0
 
     # echo ":open $file_paths"
     wezterm cli send-text \x1B --no-paste --pane-id $pane_id

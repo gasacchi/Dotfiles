@@ -8,6 +8,7 @@
 - vivid  (LS_COLORS modification)
 - helix (text editor)
 - wezterm (terminal emulator)
+- lazygit (git tui)
 - git-delta (git diff color)
 
 # language server
