@@ -1,3 +1,9 @@
+# window manager
+- hyprland
+- kitty
+- dunst
+
+
 # package requirement
 - stow (dotfile management)
 - justfile (build runner)
@@ -10,6 +16,7 @@
 - wezterm (terminal emulator)
 - lazygit (git tui)
 - git-delta (git diff color)
+- jq (json parser)
 
 # language server
 - taplo (toml)
