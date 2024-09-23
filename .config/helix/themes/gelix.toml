@@ -68,11 +68,11 @@
 "ui.linenr" = { fg = "overlay0" }
 "ui.linenr.selected" = { fg = "peach" }
 
-"ui.statusline" = { fg = "subtext0", bg = "glx_black0" }
-"ui.statusline.inactive" = { fg = "surface2", bg = "glx_black1" }
-"ui.statusline.normal" = { bg = "blue", fg = "glx_black2", modifiers = ["bold"] }
-"ui.statusline.insert" = { bg = "peach", fg = "glx_black2", modifiers = ["bold"]  }
-"ui.statusline.select" = { bg = "mauve", fg = "glx_black2", modifiers = ["bold"]  }
+"ui.statusline" = { fg = "subtext0", bg = "glx_black1" }
+"ui.statusline.inactive" = { fg = "surface2", bg = "glx_black0" }
+"ui.statusline.normal" = { bg = "blue", fg = "glx_black0", modifiers = ["bold", "italic"] }
+"ui.statusline.insert" = { bg = "peach", fg = "glx_black0", modifiers = ["bold"]  }
+"ui.statusline.select" = { bg = "mauve", fg = "glx_black0", modifiers = ["italic"]  }
 
 "ui.popup" = { fg = "subtext0", bg = "glx_black0" }
 "ui.popup.info" = { fg = "subtext0", bg = "glx_black0" }

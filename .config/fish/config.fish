@@ -8,6 +8,8 @@ alias mv="mv -v"
 alias rm="rm -v"
 alias cat="bat"
 alias dotfiles="cd ~/Dotfiles"
+alias dev="cd ~/Dev"
+alias package="e ~/Dotfiles/packages.md"
 
 if pgrep -f wezterm > /dev/null
     alias e="editor"
