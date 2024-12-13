@@ -1,20 +1,78 @@
 [[language]]
+name = "c"
+auto-format = false
+indent = { tab-width = 4, unit = "    "}
+
+[[language]]
+name = "odin"
+file-types = ["odin", "glimpse"]
+indent = { tab-width = 4, unit = "    "}
+
+[[language]]
+name = "scheme"
+scope = "source.scheme"
+injection-regex = "scheme"
+file-types = ["ss", "scm", "kbd"]
+shebangs = ["scheme", "guile", "chicken"]
+comment-token = ";;"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "rescript"
+auto-format = false
+file-types = ["res", "resi"]
+indent = { tab-width = 4, unit = "    "}
+
+[[language]]
 name = "typescript"
-indent = { tab-width = 4, unit = "\t"}
+indent = { tab-width = 4, unit = "    "}
 
 [[language]]
 name = "html"
 language-servers = [ "vscode-html-language-server", "tailwindcss-ls"]
-indent = { tab-width = 4, unit = "\t" }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "css"
 language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
 auto-format = true
-indent = { tab-width = 4, unit = "\t" }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "svelte"
 language-servers = [ "svelteserver", "tailwindcss-ls" ]
-indent = { tab-width = 4, unit = "\t" }
+indent = { tab-width = 4, unit = "    " }
 
+
+[[language]]
+name = "ocaml"
+scope = "source.ocaml"
+injection-regex = "ocaml"
+file-types = ["ml"]
+shebangs = ["ocaml", "ocamlrun", "ocamlscript"]
+block-comment-tokens = { start = "(*", end = "*)" }
+language-servers = [ "ocamllsp" ]
+indent = { tab-width = 4, unit = "    " }
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+
+[[language]]
+name = "dune"
+scope = "source.dune"
+roots = ["dune-project"]
+file-types = [{ glob = "dune-project" }, { glob = "dune" }]
+comment-token = ";"
+indent = { tab-width = 4, unit = "    " }
+grammar = "scheme"
+auto-format = false
+formatter = { command = "dune", args = ["format-dune-file"] }
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'

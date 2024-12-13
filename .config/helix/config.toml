@@ -1,4 +1,4 @@
-theme = "gelix"
+theme = "ayu_evolve"
 
 [editor]
 scrolloff = 50
@@ -13,6 +13,7 @@ bufferline = "always"
 color-modes = true
 popup-border = "none"
 jump-label-alphabet = "strnieahcdluoy"
+# auto-completion = false
 
 [editor.statusline]
 mode.normal = " normal"
@@ -26,6 +27,9 @@ display-messages = true
 normal = "block"
 insert = "bar"
 select = "underline"
+
+[keys.normal.space]
+"." = "file_picker_in_current_directory"
 
 [keys.normal.space.e]
 r = ":config-reload"

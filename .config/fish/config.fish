@@ -22,11 +22,20 @@ set -Ux LS_COLORS $(vivid generate catppuccin-mocha)
 set -Ux BAT_THEME "CatppuccinGscMod"
 set -Ux EDITOR "helix"
 
+# fcitx5
+# set -Ux GTK_IM_MODULE fcitx
+set -Ux QT_IM_MODULE fcitx
+set -Ux SDL_IM_MODULE fcitx
+set -Ux GLFW_IM_MODULE ibus
+set -Ux XMODIFIERS @im=fcitx
+
+
 # path
 set -U fish_user_paths ~/.local/bin $fish_user_paths 
 set -U fish_user_paths ~/.bun/bin $fish_user_paths
 
 # install theme
 # fish_config theme save "CatppuccinGscMod"
+
 
 

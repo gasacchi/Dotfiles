@@ -6,6 +6,7 @@
 - [x] linux-firmware
 - [x] intel-ucode
 - [x] networkmanager
+- [x] dhcpcd
 - [x] git
 - [x] opendoas
 - [x] openssh
@@ -20,11 +21,14 @@
 - [x] man-db
 - [x] man-pages
 
+# japanese input
+- [x] fcitx5-im
+- [x] fcitx5-mozc
+
 # cli
 - [x] eza (ls alternative)
 - [x] fish (better shell)
 - [x] stow (dotfile management)
-- [x] just (make alternative)
 - [x] vivid (LS_COLORS)
 - [x] bat
 - [x] git-delta (git diff with color)
@@ -32,7 +36,18 @@
 - [x] ripgrep
 - [x] wget
 - [x] unzip
+- [x] unrar
 - [x] pfetch-rs-bin
+- [x] ifuse (iphone)
+- [x] watchexec
+- [x] android-tools
+- [x] scc
+
+# compiler development
+- [x] clang
+- [x] mold
+- [x] just (make alternative)
+- [x] fasm
 
 # fonts
 - [x] ttf-jetbrains-mono-nerd
@@ -59,12 +74,23 @@
 ## other utils
 - [x] hyprpaper (wallpaper)
 - [ ] hyprpicker (color picker)
-- [x] wofi (program runner todo: delete)
 - [x] tofi (program launcher)
 - [x] cliphist (clipboard)
 
 # user programs
 - [x] brave-bin
+- [x] qbittorrent
+- [x] vlc
+- [x] anki-bin
+- [x] mpv
 
 # programming stuff
 - [x] bun-bin
+- [x] nodejs
+
+## Bun global package
+- [x] svelte-language-server
+- [x] vscode-langservers-extracted
+- [x] typescript
+- [x] typescript-language-server
+- [x] tailwindcss/language-server
